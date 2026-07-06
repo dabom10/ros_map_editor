@@ -51,7 +51,9 @@ sudo apt install python3-pyqt5
 ```
 
 2) clone
-git clone 레포 주소
+```bash
+git clone "레포 주소"
+```
 
 3) 실행
 ```bash
