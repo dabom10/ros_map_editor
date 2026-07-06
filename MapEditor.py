@@ -160,7 +160,7 @@ class MapEditor(QtWidgets.QMainWindow):
         fn_yaml = os.path.splitext(fn)[0] + '.yaml'
         try:
             stream = open(fn_yaml, "r")
-            docs = yaml.load_all(stream)
+            docs = yaml.load_all(stream, Loader=yaml.SafeLoader)
             for doc in docs:
                 self.occupied_thresh = doc['occupied_thresh']  # probability its occupied
                 self.free_thresh = doc['free_thresh']  # probability its uncertain or occupied
