@@ -45,3 +45,20 @@ With the Map Editor tool, I can now do all of these things (well, some of these 
 
 
 ## Getting Started
+1) 의존성 설치
+```bash
+sudo apt install python3-pyqt5
+```
+
+2) clone
+git clone 레포 주소
+
+3) 실행
+```bash
+cd ros_map_editor
+python3 MapEditor.py map
+python3 MapEditor.py ~/Downloads/map
+```
+- pgm 파일 이름을 인자로 넘겨야 함.
+- 해당 pgm에 대한 yaml 파일도 같은 폴더에 있어야 함.
+- .pgm 확장자는 붙여도 되고 빼도 됨.
